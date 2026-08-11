@@ -1,0 +1,134 @@
+/* FONT */
+@font-face{
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+/* BODY AND CONTENT STYLING */
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body{
+  font-family: 'Montserrat';
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: linear-gradient(to bottom, rgb(15, 15, 15), rgb(20, 20, 20));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  color:#ffffff;
+}
+.content{
+  flex: 1 0 auto; 
+}
+
+/* LOGO AND TITLE STYLING */
+.logo{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  height: 60px;
+  width: auto; 
+}
+.title{
+  position: absolute;
+  top: 165px;
+  left: 100px;
+  height: 50px;
+  font-size: 35px;
+}
+
+/* TEXTBOX STYLING */
+.textbox{
+  margin: 20px auto;
+  padding-top: 225px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 20px;
+}
+.textbox2{
+  margin: 20px auto;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.textbox3{
+  margin: 20px auto;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+a{
+  color: #4a86e8
+}
+ol{
+  list-style-type: none;
+  padding-left: 0
+}
+
+/* FOOTER STYLING */
+footer{
+  color: rgb(200, 200, 200);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  margin-top: auto;
+  width: 100%;
+}
+footer p{
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* OPTIMISATION FOR MOBILE DEVICES/PORTRAIT/SMALLER WINDOWS */
+@media (max-width: 600px){
+  .logo{
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 60px;
+  }
+
+  .title{
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  html,body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar,body::-webkit-scrollbar{
+    display: none;
+  }
+  .textbox,.textbox2,.textbox3{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
