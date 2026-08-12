@@ -105,7 +105,6 @@ footer p{
     width: auto;
     height: 60px;
   }
-
   .title{
     position: absolute;
     top: 135px;
@@ -122,9 +121,9 @@ footer p{
   html::-webkit-scrollbar,body::-webkit-scrollbar{
     display: none;
   }
-  .textbox,.textbox2,.textbox3{
-    padding-left: 50px;
-    padding-right: 50px;
+  .textbox,.textbox2,.textbox3,.title,.logo{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
