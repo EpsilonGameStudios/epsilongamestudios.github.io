@@ -50,22 +50,27 @@ body{
   padding-top: 225px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   text-align: left;
   font-size: 20px;
 }
 .textbox2{
   margin: 20px auto;
   padding-top: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 10px;
-  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  text-align: center;
   font-size: 20px;
+  background-color: rgba(94, 85, 3, 0.25);
+  border: 2px solid rgba(100, 100, 100, 0.2);
+  border-radius: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .textbox3{
   margin: 20px auto;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 10px;
@@ -121,7 +126,11 @@ footer p{
   html::-webkit-scrollbar,body::-webkit-scrollbar{
     display: none;
   }
-  .textbox,.textbox2,.textbox3,.title,.logo{
+  .textbox2{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .textbox,.textbox3,.title,.logo{
     padding-left: 30px;
     padding-right: 30px;
   }
