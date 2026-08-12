@@ -114,7 +114,6 @@ footer p{
     height: 50px;
     font-size: 35px;
     text-align: center;
-    white-space: nowrap;
   }
   html,body{
     -ms-overflow-style: none;
