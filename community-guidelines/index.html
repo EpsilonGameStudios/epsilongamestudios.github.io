@@ -6,17 +6,37 @@
         <title>EGS: Community Guidelines</title> <!-- TITLE -->
         <link rel="Icon" href="images/egsFavicon.png"> <!-- FAVICON -->
         <link rel="stylesheet" type="text/css" href="style.css"> <!-- CSS STYLING LINKS -->
+        <link rel="stylesheet" type="text/css" href="topbar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- META & OG TAGS -->
         <meta property="og:title" content="Epsilon Game Studios">
         <meta property="og:description" content="Community Guidelines">
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <div style="height: 5px; background-image: linear-gradient(to right, #ffffff, rgb(125, 125, 125));"></div>
-        <img src="images/egsLogo.png" alt="Epsilon Game Studios logo" class="logo">
-        <h1 class="title">Community Guidelines</h1>
+        <header class="topbar">
+            <img src="images/egsLogo.png" alt="Epsilon Game Studios logo" class="topbarlogo">
+            <button class="menubtn" id="menuToggle">☰</button>
+            <div class="topbarcont" id="navMenu">
+                <a href="https://sites.google.com/view/epsilongamestudios" class="topbarbtn tbbtn1" rel="noopener">
+                    HOME
+                </a>
+                <a href="https://sites.google.com/view/epsilongamestudios/games" class="topbarbtn tbbtn1" rel="noopener">
+                    GAMES
+                </a>
+                <a href="https://sites.google.com/view/epsilongamestudios/our-team" class="topbarbtn tbbtn1" rel="noopener">
+                    OUR TEAM
+                </a>
+                <a href="https://sites.google.com/view/epsilongamestudios/careers" class="topbarbtn tbbtn1" rel="noopener">
+                    CAREERS
+                </a>
+                <a href="https://sites.google.com/view/epsilongamestudios/gallery" class="topbarbtn tbbtn1" rel="noopener">
+                    GALLERY
+                </a>
+            </div>
+        </header>
         <main class="content">
             <div class="textbox" style="margin-top: 75px;">
+                <h1>Community Guidelines</h1>
                 <p style="margin: 0;">These guidelines apply to the <a href="https://discord.gg/q9bpSpbw6E">Epsilon Game Studios Discord Server.</a></p>
                 <p>To ensure a safe and positive community, please read and follow the guidelines.<p></p>
             </div>
@@ -165,6 +185,19 @@
             <p>&copy; Epsilon Game Studios</p>
             <br><br>
         </footer>
+        <script>
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                if (navMenu.classList.contains('open')) {
+                    menuToggle.innerHTML = '✕';
+                } else {
+                    menuToggle.innerHTML = '☰';
+                }
+            });
+        </script>
     </body>
 </html>
 
