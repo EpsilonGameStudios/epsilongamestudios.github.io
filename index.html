@@ -38,7 +38,9 @@
         <main class="content container">
             <div class="header">
                 <h1 style="font-weight: 500;">CREATING QUALITY GAMES</h1>
+                <a href="#welcome" class="arrow">➜</a>
             </div>
+            <div id="welcome"></div><br>
             <div class="textbox" style="text-align: center;">
                 <h1 style="font-weight: 500;">Welcome to<br><strong>Epsilon Game Studios</strong></h1>
                 <p>We are a game studio developing games across a variety of genres.<p>
@@ -91,7 +93,7 @@
             menuToggle.addEventListener('click', () => {
                 navMenu.classList.toggle('open');
                 if (navMenu.classList.contains('open')) {
-                    menuToggle.innerHTML = '✕';
+                    menuToggle.innerHTML = '✖';
                 } else {
                     menuToggle.innerHTML = '☰';
                 }
