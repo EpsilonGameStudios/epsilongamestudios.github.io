@@ -86,7 +86,7 @@ a.arrow:hover{
   font-size: 20px;
 }
 .textbox{
-  padding: 50px 0px 50px 0px;
+  padding: 75px 0px 25px 0px;
 }
 .textbox2{
   padding-left: 30px;
@@ -109,7 +109,7 @@ a.arrow:hover{
   padding-bottom: 20px;
 }
 .textbox4{
-  padding: 50px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
 }
 ol{
   list-style-type: none;
